@@ -3,5 +3,5 @@
 Console.Write("Введите цифру, соответствующую дню недели. (Например: понедельник это 1): ");
 int num = Convert.ToInt32(Console.ReadLine());
 if (num >= 8) Console.Write("Неверная цифра, попробуйте еще раз");
-if (num < 6 && (num != 6 || num != 7)) Console.Write("Будний день.");
+if (num <= 5) Console.Write("Будний день.");
 if (num == 6 || num == 7) Console.Write("Выходной день!");
